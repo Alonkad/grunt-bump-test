@@ -1,6 +1,6 @@
 {
   "name": "grunt-bump-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Testing grunt-bump functionality",
   "main": "index.js",
   "scripts": {
