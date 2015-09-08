@@ -1,0 +1,24 @@
+{
+  "name": "grunt-bump-test",
+  "version": "1.0.0",
+  "description": "Testing grunt-bump functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Alonkad/grunt-bump-test.git"
+  },
+  "author": "Alon Kaduri <alonkad@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alonkad/grunt-bump-test/issues"
+  },
+  "homepage": "https://github.com/Alonkad/grunt-bump-test#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.5.0",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
