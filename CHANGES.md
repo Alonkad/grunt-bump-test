@@ -1,4 +1,8 @@
 
+# 1.2.2
+
+- Fixing actual version number in change-log (to the newly released version) `7ab039d`
+
 # 1.2.0
 
 - Adding actual version number to change-log `dd27a70`
