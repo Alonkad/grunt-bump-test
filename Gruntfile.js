@@ -24,7 +24,7 @@ module.exports = function (grunt) {
               regExp: false
           }
       },
-      chagelog: {
+      changelog: {
           release: {
               options: {
                   version: 'next'
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
   //Default task(s).
   grunt.registerTask('release', [
       'bump-only:minor',
-      'chagelog',
+      'changelog',
       'bump-commit'
   ]);
 };
