@@ -23,10 +23,21 @@ module.exports = function (grunt) {
               prereleaseName: false,
               regExp: false
           }
+      },
+      chagelog: {
+          release: {
+              options: {
+                  version: 'next'
+              }
+          }
       }
   });
 
 
   //Default task(s).
-  grunt.registerTask('default', []);
+  grunt.registerTask('release', [
+      'bump-only:minor',
+      'chagelog',
+      'bump-commit'
+  ]);
 };
