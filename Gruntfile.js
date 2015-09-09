@@ -4,18 +4,14 @@ module.exports = function (grunt) {
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
-    var getVersionFromPackageJSON = function () {
-        var pJson = grunt.file.readJSON('package.json');
-        return pJson.version;
-    };
-
-
     // Project Configuration
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+
         bump: {
             options: {
                 files: ['package.json'],
-                updateConfigs: [],
+                updateConfigs: ['pkg'],
                 commit: true,
                 commitMessage: 'Release v%VERSION%',
                 commitFiles: ['-a'],
@@ -33,7 +29,7 @@ module.exports = function (grunt) {
         changelog: {
             release: {
                 options: {
-                    version: getVersionFromPackageJSON()
+                    version: '<%= pkg.version %>'
                 }
             }
         }
