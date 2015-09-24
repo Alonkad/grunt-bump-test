@@ -1,4 +1,8 @@
 
+# 1.3.0
+
+- Create README.md `d34faaf`
+
 # 1.2.2
 
 - Fixing actual version number in change-log (to the newly released version) `7ab039d`
